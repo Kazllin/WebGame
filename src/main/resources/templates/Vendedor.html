@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NA-FORMULARIO</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/./img/iconi.ico">
+    <link rel="stylesheet" href="/./css/form1.css">
+   
+</head>
+
+<body>
+
+    <main>
+        <div class="box">
+            <div class="inner-box">
+                <div class="forms-wrap">
+                    <form th:action="@{/web-game/usuario/add-usuario}" th:object="${usuario}" method="post">
+                        <h1> CADASTRO PARA VENDEDOR</h1>
+                        <div class="actual-form" th:object = "${usuario}">
+                        
+                            <div class="card-group">
+                                <input type="text" id="nome" th:field = "*{nome}" name="nome" class="input-field" placeholder="Email">
+                            </div>
+
+                            <div class="card-group">
+                                <input type="email" id="email" th:field = "*{email}" name="email" class="input-field" placeholder="Digite o seu E-mail">
+                            </div>
+
+                            <div class="card-group">
+                                <inpt type="password" id="senha" name="senha" th:field = "*{senha}" class="input-field" placeholder="Digite sua Senha">
+                            </div>
+
+                            <div class="card-group">
+                                <input type="text" id="telefone" name="telefone" th:field = "*{telefone}" class="input-field" placeholder="Digite o seu Telefone">
+                            </div>
+
+                            <div class="card-group">
+                                <input type="text" id="endereco" th:field = "*{endereco}" name="endereco" class="input-field" placeholder="Digite o sua endereco">
+                            </div>
+
+                            <div class="card-group">
+                                <input type="text" name="uf" id="uf" th:field = "*{uf}" class="input-field" placeholder="Digite o seu UF">
+                            </div>
+                            
+                            <div class="card-group">
+                                <div class="dropdown">
+  									<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+   									 Dropdown button
+  									</button>
+  									<ul class="dropdown-menu">
+    								<li><a class="dropdown-item" href="#">Action</a></li>
+    								<li><a class="dropdown-item" href="#">Another action</a></li>
+   								 	<li><a class="dropdown-item" href="#">Something else here</a></li>
+  									</ul>
+								</div>
+                            </div>
+                            
+
+                            <div class="bt1">                     
+                                <input type="submit" id="cadastrar" name="cadastrar" value="Cadastra-se" class="sign-btn">
+                            </div>
+
+                        </div>
+                    </form>
+                    <div class="img">
+
+                        <div class="images">
+
+                          <img src="/./img/Game analytics-amico.png " class="image" alt="">
+
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script>
+        
+    </script>
+</body>
+</html>

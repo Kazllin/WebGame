@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Arcade | Traficos Humanos</title>
+    <link rel="stylesheet" type="text/css" href="/./css/styhome.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header><a href="#" class="logo"> Nexus Arcade</a>
+    
+        <ul class="navlist">
+            <li><a href="#">Pré-Venda</a></li>
+            <li><a href="#">Computadores</a></li>
+            <li><a href="#">Acessórios</a></li>
+            <li><a href="#">Moda Gamer</a></li>
+            <li><a href="#">Cupons</a></li>
+            
+        </ul>
+
+        <li class="search-icon">
+            <input type="search" placeholder="Pesquisar...">
+            <label class="icon">
+            <span class='bx bx-search-alt-2'></span>
+            </label>
+         </li>
+        
+        <nav>
+        <li class="dropdown">
+        <div class="bx bx-user-circle" id="userdd" >▾</div>
+        <div class="dropdown-menu">
+            <a  th:href="@{/web-game/usuario/crud}"><i class='bx bxs-user-detail' ></i>CRUD</a>
+            <a href=""><i class='bx bxs-shopping-bag'></i> Seja Vendedor</a>
+            <a href=""><i class='bx bxs-cog'></i> Configurações</a>
+            <a href=""><i class='bx bxs-exit'></i> Sair</a>
+        </div>
+</li>
+       
+        
+        <a href="#"><div class="bx bx-cart" id="cart" ></div></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        </nav>
+     </header>
+
+        <script src="/./js/script.js"></script>
+
+    <section class="banner">
+        <div class="banner-img">
+            <a href=""><img src="/./img/promo1.jpg"></a>
+        </div>
+
+        <div class="banner-img">
+            <a href=""><img src="/./img/promo2.jpg"></a>
+        </div>
+    </section>
+
+    <section class="new product">
+        <div class="center-text">
+            <h2>Nova Promação</h2>
+        </div>
+
+       
+        <main class="main main-inner"> 
+            <article class="card"><a href="#">
+                <div class="img-box">
+                    <img src="/./img/boq.png">
+                </div>
+                <div class="s-name">
+                    <p>20% DE DESCONTO</p>
+                </div>
+        
+                <div class="price-box">
+                    
+                    <div>
+                        <span class="sprice cprice">Produto1</span>
+                        <span class="sprice price">$999</span>
+                    </div>
+                    <a href="" class="iconns"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+        </a>
+        
+        
+            <article class="card"><a href="#">
+                <div class="img-box">
+                    <img src="/./img/oing.png">
+                </div>
+                <div class="s-name">
+                    <p>20% DE DESCONTO</p>
+                </div>
+        
+                <div class="price-box">
+                    
+                    <div>
+                        <span class="sprice cprice">Produto2</span>
+                        <span class="sprice price">$999</span>
+                    </div>
+                    <a href="" class="iconns"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+        </a>
+        
+            <article class="card"><a href="#">
+                <div class="img-box">
+                    <img src="/./img/trist.png">
+                </div>
+                <div class="s-name">
+                    <p>20% DE DESCONTO</p>
+                </div>
+        
+                <div class="price-box">
+                   
+                    <div>
+                        <span class="sprice cprice">Produto3</span>
+                        <span class="sprice price">$400</span>
+                    </div>
+                    <a href="" class="iconns"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+            </a>
+        
+            <article class="card"><a href="#">
+                <div class="img-box">
+                    <img src="/./img/oing.png">
+                </div>
+                <div class="s-name">
+                    <p>20% DE DESCONTO</p>
+                </div>
+        
+                <div class="price-box">
+                   
+                    <div>
+                        <span class="sprice cprice">Produto4</span>
+                        <span class="sprice price">$400</span>
+                    </div>
+                    <a href="" class="iconns"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+            </a>
+            
+            <article class="card"><a href="#">
+                <div class="img-box">
+                    <img src="/./img/oingg.png">
+                </div>
+                <div class="s-name">
+                    <p>20% DE DESCONTO</p>
+                </div>
+        
+                <div class="price-box">
+                   
+                    <div>
+                        <span class="sprice cprice">Produto5</span>
+                        <span class="sprice price">$400</span>
+                    </div>
+                    <a href="" class="iconns"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+            </a>
+
+            <article class="card"><a href="#">
+                <div class="img-box">
+                    <img src="/./img/boq.png">
+                </div>
+                <div class="s-name">
+                    <p>20% DE DESCONTO</p>
+                </div>
+        
+                <div class="price-box">
+                   
+                    <div>
+                        <span class="sprice cprice">Produto6</span>
+                        <span class="sprice price">$400</span>
+                    </div>
+                    <a href="" class="iconns"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+            </a>
+
+            <article class="card"><a href="#">
+                <div class="img-box">
+                    <img src="/./img/oingg.png">
+                </div>
+                <div class="s-name">
+                    <p>20% DE DESCONTO</p>
+                </div>
+        
+                <div class="price-box">
+                   
+                    <div>
+                        <span class="sprice cprice">Produto7</span>
+                        <span class="sprice price">$400</span>
+                    </div>
+                    <a href="" class="iconns"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+            </a>
+
+            <article class="card"><a href="#">
+                <div class="img-box">
+                    <img src="/./img/oing.png">
+                </div>
+                <div class="s-name">
+                    <p>20% DE DESCONTO</p>
+                </div>
+        
+                <div class="price-box">
+                   
+                    <div>
+                        <span class="sprice cprice">Produto8</span>
+                        <span class="sprice price">$400</span>
+                    </div>
+                    <a href="" class="iconns"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+            </a>
+
+        </main>
+    </section>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <script src="./js/script.js" ></script>
+
+    
+<hr>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1><img type="" src="/./img/logo.png" width="170rem">
+                </h1>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="twitter">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class='bx bxl-whatsapp' ></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Atendimento ao Cliente</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Central de Ajuda</a>
+                </li>
+            
+                <li>
+                    <a href="#" class="footer-link">Devolução e Reembolso</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Sobre o E-Commerce</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Política de Privacidade</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Métodos de Pagamento</h3>
+
+                <p>
+                    <a href=""><img src="/./img/pagament.png" ></a>
+                </p>
+              
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 E-Commerce. Todos os direitos reservados
+        </div>
+    </footer>
+
+</body>
+</html>

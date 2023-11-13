@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after{
+  padding: 1;
+  margin: 1;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(245.59deg,#6a4686 0% 28.53%,#230d47 75.52%);
+
+}
+
+main{
+  width: 100%;
+  min-height: 98vh;
+}
+.form1{
+  position: relative;
+  top: 100px;
+  width: 90%;
+}
+.principal{
+  position: relative;
+  padding:50px; 
+}
+.cadastro{
+  background-color: #ffffff90;
+  box-shadow: 3px 3px 1px 0px #00000060;
+  position: absolute;
+  left: 300px;
+  top: 50px;
+  border-radius: 15px;
+  width: 70vw;
+  height:70vh;
+  display: flex;
+  padding: 30px 35px;
+}
+.textfield{
+  position: absolute;
+  top: 15vh;
+  left: 700px;
+  width: 400px;
+}
+img{
+  position: absolute;
+  width: 400px;
+  left: 150px;
+  top: 80px;
+}
+.btn{
+    padding: 20px;
+    left: -2px;
+    width: 91%;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: #6a4686;
+    position: relative;
+  }
+  .btn:hover{
+    cursor: pointer;
+    background-color: rgb(35, 21, 36);
+    
+  }
+  input{
+    width: 89%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    display: inline-block;
+    border-bottom: 2px solid;
+    background-color: transparent;
+  }
+  h1{ 
+    position: relative;
+    left: 0vh;
+  }

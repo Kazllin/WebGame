@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+     <link rel="shortcut icon" type="image/x-icon" href="/./img/iconi.ico">
+    <link rel="stylesheet" href="/./css/login.css">
+    
+</head>
+<body>
+    <main>
+    <form class="form1" th:object="${usuario}" th:action="@{/web-game/usuario/login}" method="post">
+       
+        <div class="principal">
+            <div class="img">
+                
+            </div>
+                <div class="cadastro">
+                    <div class="textfield">
+                        <h1>Bem-vindo de volta!</h1>
+                    <input type="email" th:field="*{email}" placeholder="Email" id="">
+                        <br><br>
+                    <input type="password" th:field="*{senha}" placeholder="Senha" id="">
+                        <br><br>
+                    <input class="btn" type="submit" value="Entrar">
+                    </div>
+                <img src="/img/Gaming-amico.png">
+            </div>
+        </div>
+    </form>
+</main>
+</body>
+</html>

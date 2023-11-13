@@ -1,0 +1,608 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+ 
+
+*,
+
+*::before,
+
+*::after {
+
+    padding: 1;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+}
+
+ 
+
+body,
+
+input {
+
+    font-family: "Poppins", sans-serif;
+
+ 
+
+}
+
+ 
+
+body {
+
+    background: linear-gradient(245.59deg, #6a4686 0% 28.53%, #230d47 75.52%);
+
+ 
+
+}
+
+ 
+
+main {
+
+    width: 100%;
+
+    min-height: 98vh;
+
+    overflow: hidden;
+
+    background: linear-gradient(245.59deg, #6a4686 0% 28.53%, #230d47 75.52%);
+
+    padding: 2rem;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+ 
+
+.box {
+
+    position: relative;
+
+    width: 70%;
+
+    max-width: 1080px;
+
+    height: 550px;
+
+    background-color: #fff;
+
+    border-radius: 3.3rem;
+
+    box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+
+}
+
+ 
+
+.inner-box {
+
+    position: absolute;
+
+    width: calc(100% - 4.1rem);
+
+    height: calc(100% - 4.1rem);
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+ 
+
+.forms-wrap {
+
+    position: absolute;
+
+    height: 45%;
+
+    width: 45%;
+
+    top: 0;
+
+    left: 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-rows: 1fr;
+
+    transition: 0.8s ease-in-out;
+
+}
+
+ 
+
+form {
+
+    max-width: 260px;
+
+    width: 50%;
+
+    margin: 0 auto;
+
+    height: 100%;
+
+    display: grid;
+
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+    grid-column: 1 / 2;
+
+    grid-row: 1 / 2;
+
+    transition: opacity 0.02s 0.4s;
+
+}
+
+ 
+
+.actual-form {
+
+    position: absolute;
+
+    width: calc(100% - 4.1rem);
+
+    height: calc(100% - 4.1rem);
+
+    top: 70%;
+
+    left: 112%;
+
+    transform: translate(-50%, -50%);
+
+ 
+
+}
+
+ 
+
+ 
+
+.card-group {
+
+    position: relative;
+
+    height: 2.4rem;
+
+    margin-bottom: 1.25rem;
+
+    width: 80%;
+
+    top: 10px;
+
+    color: #151111;
+
+}
+
+.card-group2 {
+
+    position: relative;
+
+    height: 2.4rem;
+
+    margin-bottom: 1.25rem;
+
+    width: 80%;
+
+    top: -40px;
+
+    color: #151111;
+
+}
+
+ 
+
+.input-field {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: none;
+
+    outline: none;
+
+    border: none;
+
+    border-bottom: 1px solid #070606;
+
+    padding: 0;
+
+    font-size: 0.85rem;
+
+    color: #000000;
+
+    transition: 0.4rem;
+
+    left: -220px;
+
+}
+
+ 
+
+h1 {
+
+    position: absolute;
+
+    width: calc(100% - 4.1rem);
+
+    height: calc(100% - 4.1rem);
+
+    transform: translate(-50%, -50%);
+
+    top: 20%;
+
+    left: 120%;
+
+}
+
+ 
+
+.sign-btn {
+
+    display: inline-block;
+
+    width: 150px;
+
+    height: 50px;
+
+    background: linear-gradient(245.59deg, #331c44 0% 28.53%, #4b1a9b 75.52%);
+
+    color: #fff;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 0.8rem;
+
+}
+
+ 
+
+.sign-btn:hover {
+
+    background: linear-gradient(245.59deg, #6a4686 0% 28.53%, #230d47 75.52%);
+
+}
+
+ 
+
+.bt1{
+
+    position: absolute;
+
+    left: -190px;
+
+    width: 100%;
+
+    height: 40px;
+
+    top: 390px;
+
+}
+
+ 
+
+ 
+
+ 
+
+.img{
+
+    position: absolute;
+
+    height: 175%;
+
+    width: 100%;
+
+    left: 100%;
+
+    top: 100px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding-bottom: 2rem;
+
+    overflow: hidden;
+
+    transition: 0.8s ease-in-out;
+
+}
+
+ 
+
+.img img{
+
+    width: 100%;
+
+}
+
+ 
+
+@media (max-width: 850px){
+
+ 
+
+    .box{
+
+ 
+
+        height: auto;
+
+ 
+
+        max-width: 550px;
+
+ 
+
+        overflow: hidden;
+
+ 
+
+    }
+
+ 
+
+ 
+
+ 
+
+    .inner-box{
+
+ 
+
+        position: static;
+
+ 
+
+        transform: none;
+
+ 
+
+        width: revert;
+
+ 
+
+        height: revert;
+
+ 
+
+        padding: 2rem;
+
+ 
+
+    }
+
+ 
+
+ 
+
+ 
+
+    .forms-wrap{
+
+ 
+
+        position: revert;
+
+ 
+
+        width: 100%;
+
+ 
+
+        height: auto;
+
+ 
+
+    }
+
+ 
+
+ 
+
+ 
+
+    form{
+
+ 
+
+        max-width: revert;
+
+ 
+
+        padding: 1.5rem 2.5rem 2rem;
+
+ 
+
+        transition: transform 0.8s ease-in-out,
+
+ 
+
+                    opacity 0.45s linear;
+
+ 
+
+    }
+
+ 
+
+ 
+
+ 
+
+    .heading {
+
+ 
+
+        margin: 2rem 0;
+
+ 
+
+      }
+
+ 
+
+   
+
+ 
+
+      form.sign-up-form {
+
+ 
+
+        transform: translateX(100%);
+
+ 
+
+      }
+
+ 
+
+   
+
+ 
+
+      main.sign-up-mode form.sign-in-form {
+
+ 
+
+        transform: translateX(-100%);
+
+ 
+
+      }
+
+ 
+
+   
+
+ 
+
+      main.sign-up-mode form.sign-up-form {
+
+ 
+
+        transform: translateX(0%);
+
+ 
+
+      }
+
+ 
+
+ 
+
+ 
+
+    .img{
+
+ 
+
+        position: revert;
+
+ 
+
+        height: auto;
+
+ 
+
+        width: 100%;
+
+ 
+
+        padding: 3rem 2rem;
+
+ 
+
+        display: flex;
+
+ 
+
+    }
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+@media (max-width: 530px){
+
+ 
+
+    main{
+
+ 
+
+        padding: 1rem;
+
+ 
+
+    }
+
+ 
+
+ 
+
+ 
+
+    .box{
+
+ 
+
+        border-radius: 2rem;
+
+ 
+
+    }
+
+ 
+
+ 
+
+ 
+
+    .inner-box{
+
+ 
+
+        padding: 1rem;
+
+ 
+
+    }
+    .img{
+        padding: 1.5rem 1rem;
+        border-radius: 1.6rem;
+    }
+
+    form{
+        padding: 1rem 2rem 1.5rem;
+    }
+}
