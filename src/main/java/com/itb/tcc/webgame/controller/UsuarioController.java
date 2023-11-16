@@ -55,6 +55,7 @@ public class UsuarioController {
 	public String addUsuario(Usuario usuario, Model model) {
 		
 		
+		@SuppressWarnings("unused")
 		Usuario usuarioBanco = usuarioRepository.save(usuario);
 		
 		return "redirect:/web-game/usuario/login";
@@ -100,24 +101,26 @@ public class UsuarioController {
 	}
 	
 	@PostMapping("/salvo/{id}")
-	public String updateUsuario(@RequestParam(value = "file", required = false) MultipartFile file, @PathVariable("id") int id,
-			@ModelAttribute("usuario") Usuario usuario, Model model, BindingResult result) {
-		  
+	public String updateUsuario( @PathVariable("id") int id,
+			@ModelAttribute("usuario") Usuario usuario, Model model) {
 		
-		if (result.hasErrors()) {
-			usuario.setId(id);
-			usuario.setNome(usuario.getNome());
-			usuario.setEmail(usuario.getEmail());
-			usuario.setSenha(usuario.getSenha());
-			usuario.setTelefone(usuario.getTelefone());
-			usuario.setEndereco(usuario.getEndereco());
-			usuario.setUf(usuario.getUf());
-			usuario.setCep(usuario.getCep());
+		  Usuario usuario1 = usuarioRepository.findById(usuario.getId()).orElseThrow(() -> new IllegalArgumentException("Invalid prod Id:" + id));
+		
+		
+		   
+			usuario1.setNome(usuario.getNome());
+			usuario1.setEmail(usuario.getEmail());
+			usuario1.setTelefone(usuario.getTelefone());
+			usuario1.setEndereco(usuario.getEndereco());
+			usuario1.setUf(usuario.getUf());
+			usuario1.setCep(usuario.getCep());
+			
+			usuarioRepository.save(usuario);
 
-			return "editar-usuario";
-		}
 		
-		usuarioRepository.save(usuario);
+
+		
+		
 		return "redirect:/web-game/usuario/crud";
 	}
 	
