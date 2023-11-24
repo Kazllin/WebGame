@@ -13,13 +13,5 @@ public interface UsuarioService {
 
 	void deleteUsuarioById(Long id);
 	
-
-
-
-
-	
-
-
-	
 	
 }
